@@ -1,0 +1,90 @@
+
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;          /* fixa no topo */
+    width: 100%;     /* ocupa a largura total */
+    z-index: 1000;   /* evita que outros elementos fiquem por cima */
+    width: 100%;
+    background-color:white; 
+    justify-content:center; /* logo à esquerda e menu à direita */
+    align-items: center;
+    display: flex;
+    padding: 16px 30px;
+    gap: 15px;
+    
+}
+
+
+.logo {
+    margin-left: 150px;
+    height: 60px;
+    width: auto;
+}
+
+header h1 {
+    margin-right: 800px;
+    color: rgb(79, 79, 161);
+}
+header p {
+    margin: 0;
+}
+
+.infos {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px
+    
+}
+
+
+
+
+/* Hero */
+
+.hero {
+    background-color: pink;
+    padding: 80px;
+}
+
+
+
+
+
+/* Sections */
+section {
+    margin-top: 100px;
+    padding: 30px;  /* valor deve ser igual à altura do header */
+    background-color: rgb(255, 255, 255);
+    background-image: url("banner.jpg") ;
+}
+
+
+
+
+
+
+
+/* Serviços em cards */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d4ddea;
+}
+
+/* Rodapé */
+footer {
+    background: #043263;
+    color: white;
+    text-align: center;
+    padding: 200px;
+}
