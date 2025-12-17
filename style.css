@@ -2,72 +2,84 @@
 
 
 
+
+
+
 /* Header */
-header {
-display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+.header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px
-    marginleft
+    background-color: white;
+    width: 100%;
    
     
 }
-
-
 .logo {
-    margin-left: 10px;
-    height: 60px;
-    width: auto;
-}
-.logo{
 
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-.infos{
-    padding: 8px 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px
-
-
-}
-
-header h1 {
-    margin-right: 800px;
-    color: rgb(79, 79, 161);
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: rgb(40, 40, 170);
 }
 
 
+.menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(40, 40, 170);
+    padding: 15px;
+    z-index: 1000;
+}
 
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
 
-
-
-
-
-
+.menu a:hover {
+    color: #00bcd4;
+}
 
 
 
 
 
 /* Sections */
-section {
-    margin-top: 100px;
-    padding: 30px;  /* valor deve ser igual à altura do header */
-    background-color: rgb(255, 255, 255);
+.sections {
+    margin-top: 10px;
+    padding: 100px;  /* valor deve ser igual à altura do header */
+   
    
 }
-.hero {
- background-image: url("banner.jpg") ;
+ .hero {
+    height: 100vh; /* ocupa a tela toda */
+    background-image: url("https://www.contabeis.com.br/assets/img/news/conheca-as-vantagens-da-contabilidade-consultiva.png");
+    background-size: cover;      /* cobre toda a área */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
-
-
-
-
 
 
 
@@ -83,6 +95,7 @@ section {
     border-radius: 8px;
     border: 1px solid #d4ddea;
 }
+
 
 /* Rodapé */
 footer {
