@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 /* Header */
 .header {
     display: flex;
@@ -58,23 +52,39 @@
 }
 
 
+h2 {
+    font-size: 32px;
+}
+
+body {
+    
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+
+}
+
 
 
 
 /* Sections */
-.sections {
-    margin-top: 10px;
-    padding: 100px;  /* valor deve ser igual à altura do header */
-   
-   
+section {
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: black;
+  display: flex;
+
 }
+
  .hero {
+    
     height: 100vh; /* ocupa a tela toda */
     background-image: url("https://www.contabeis.com.br/assets/img/news/conheca-as-vantagens-da-contabilidade-consultiva.png");
     background-size: cover;      /* cobre toda a área */
     background-position: center; /* centraliza a imagem */
     background-repeat: no-repeat;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -83,10 +93,26 @@
 
 
 
-/* Serviços em cards */
+
+
+
+.servicos {
+    height: 100vh; 
+    background-color: rgba(128, 128, 128, 0.575);
+   
+
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}   
+
 .cards {
-    display: flex;
-    gap: 20px;
+    display:flex;
+    border-radius: 15px;
+    gap: 100px;
 }
 
 .card {
@@ -96,11 +122,116 @@
     border: 1px solid #d4ddea;
 }
 
-
-/* Rodapé */
-footer {
-    background: #043263;
-    color: white;
+.testimonials {
+    background-color: #f4f6f8;
+    padding: 60px 20px;
     text-align: center;
-    padding: 200px;
 }
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #1e1e1e;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.footer {
+
+    background-color:  rgb(40, 40, 170);
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+
+
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2a2a2a;
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #999999;
+}
+
